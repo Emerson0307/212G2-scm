@@ -1,0 +1,165 @@
+h3 {
+	position:absolute;
+	top:0;
+	right:0;
+	left:0;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial Black", sans-serif;
+	font-weight: bold;
+	outline: 0;
+	background: #ff4000; /* fallback for old browsers */
+	background: -webkit-linear-gradient(right, #ff4000, #e61919);
+	background: -moz-linear-gradient(right, #ff4000, #e61919);
+	background: -o-linear-gradient(right, #ff4000, #e61919);
+	background: linear-gradient(to left, #ff4000, #e61919);
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+
+div.card {
+	position:relative;
+	top:0;
+	right:0;
+	left:20%;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background: #268FFF; /* fallback for old browsers */
+	background: linear-gradient(to left, #268FFF, #268FFF);
+	font-family: "Arial Black", sans-serif;
+	width: 60%;
+	border: 0;
+	margin: 0 0 0;
+	padding: 75px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+div.card-body {
+	position:relative;
+	top:0;
+	right:0;
+	left:0;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background: #268FFF; /* fallback for old browsers */
+	background: linear-gradient(to left, #268FFF, #268FFF);
+	font-family: "Arial Black", sans-serif;
+	width: 60%;
+	border: 0;
+	margin: auto;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+div.row {
+	position:relative;
+	top:0;
+	right:0;
+	left:0;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background: #FFFFFF;
+	width: 100%;
+	border: 0;
+	margin: auto;
+	padding: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+div.form-group.col-md-8 {
+	position:relative;
+	top:0;
+	right:0;
+	left:17%;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background: #FFFFFF;
+	width: 150%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+input{
+	text-align: center;
+}
+
+div.form-group.col-md-4 {
+	position:relative;
+	top:5%;
+	right:0;
+	left:33%;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background: #FFFFFF;
+	width: 150%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+input.btn.btn-primary {
+	position:relative;
+	top:0;
+	right:0;
+	left:0;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background:  #DC0505;
+	width: 100%;
+	border: 0;
+	margin: 0 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+	font-size: 12px;
+}
+
+input.btn.btn-primary:hover, input.btn-primary:active, input.btn.btn-primary:focus {
+background: #B70606;
+}
+
+form {
+	position:absolute;
+	top:0;
+	right:0;
+	left:-75%;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	outline: 0;
+	background: #FFFFFF;
+	width: 325%;
+	border: 0;
+	margin: 0em;
+	padding: -10px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+body {
+background: #268FFF; /* fallback for old browsers */
+background: -webkit-linear-gradient(right, #268FFF, #268FFF);
+background: -moz-linear-gradient(right, #268FFF, #268FFF);
+background: -o-linear-gradient(right, #268FFF, #268FFF);
+background: linear-gradient(to left, #268FFF, #268FFF);
+font-family: "Arial Black", sans-serif;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}

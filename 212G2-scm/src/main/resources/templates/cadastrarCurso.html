@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Cadastrar Curso</title>
+	<script type="text/javascript">
+		function consulta() {
+			window.open("/sig/cursos");
+		}
+	</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+		integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+
+<body>
+	<div class="container my-5">
+		<br />
+		<h3> Cadastrar Curso </h3>
+		<div class="card">
+			<div class="card-body">
+				<div class="col-md-8">
+					<form action="#" th:action="@{/sig/cursos}" th:object="${curso}" method="post">
+						<div class="row">
+							<div class="form-group col-md-4">
+								<label for="turma" class="col-form-label">Turma</label>
+								<input type="text" th:field="*{turma}" class="form-control" id="turma"
+									placeholder="Turma">
+								<span th:if="${#fields.hasErrors('turma')}" th:errors="*{turma}" class="textdanger">
+								</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="form-group col-md-8">
+								<label for="nivel" class="col-form-label">Nivel</label>
+								<input type="text" th:field="*{nivel}" class="form-control" id="nivel"
+									placeholder="Nivel">
+								<span th:if="${#fields.hasErrors('nivel')}" th:errors="*{nivel}" class="textdanger">
+								</span>
+							</div>
+						</div>
+						<div class="form-group col-md-8">
+							<label for="turno" class="col-form-label">Turno</label>
+							<input type="text" th:field="*{turno}" class="form-control" id="turno" placeholder="Turno">
+							<span th:if="${#fields.hasErrors('turno')}" th:errors="*{turno}" class="textdanger"></ span>
+						</div>
+						<div class="form-group col-md-8">
+						</div>
+						<div class="form-group col-md-8">
+							<label for="professor" class="col-form-label">Professor</label>
+							<input type="text" th:field="*{professor}" class="form-control" id="professor"
+								placeholder="Professor">
+							<span th:if="${#fields.hasErrors('professor')}" th:errors="*{professor}" class="textdanger">
+								</ span>
+						</div>
+				</div>
+				<div class="form-group col-md-8">
+					<input type="submit" class="btn btn-primary" value="Cadastrar Curso">
+					<input type="button" class="btn btn-primary" value="Consultar Curso" onclick="consulta();">
+				</div>
+				</form>
+			</div>
+		</div>
+		<h6 th:text="${message}" class="text-danger"></h6>
+	</div>
+</body>
+
+</html>
